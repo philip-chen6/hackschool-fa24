@@ -19,6 +19,13 @@ select, input, textarea {
 /* Navbar Styling */
 
 #navbar {
+    background-color: #f9a857;
+    margin-bottom: 35px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     /*
     - Change background color to #f9a857
     - Turn the navbar into a flex container w/ space between items
@@ -29,6 +36,11 @@ select, input, textarea {
 }
 
 .title a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+
     /*
     - Change font color to white
     - Set font size to 25px
@@ -38,6 +50,12 @@ select, input, textarea {
 }
 
 .navButtons a {
+    padding: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
     /*
     - Add padding of 14px
     - Add 1px solid white border 
@@ -55,7 +73,14 @@ h2 {
 
 /* Trips Section Styling */
 .tripsContainer {
-/*
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    gap: 20px;
+    margin:auto;
+
+/*  
   - Allow for a flexible box layout where child elements (trip boxes) will be aligned
   - Center the trip boxes horizontally within the container
   - Center the trip boxes vertically within the container
@@ -67,6 +92,14 @@ h2 {
 
   
 .tripBox {
+    flex: 1; /* all items equal amount of space */
+    padding: 20px;
+    background-color: #f9a857;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+
 /* 
   - Make each trip box take an equal portion of the container space
   - Add a 20px padding inside each trip box for spacing content
